@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+
+id = "blenderbot"
+version = "0.1.0"
+name = "Blenderbot"
+tagline = "An interactive guide that teaches you the basics of Blender"
+maintainer = "Blenderbot"
+type = "add-on"
+
+tags = ["3D View", "User Interface"]
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
