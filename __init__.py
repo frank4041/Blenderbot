@@ -1,12 +1,13 @@
-"""Blenderbot: an interactive guide that teaches Blender inside Blender."""
+from . import basics
 
-from . import engine, ui
+LESSONS = {
+    basics.LESSON.id: basics.LESSON,
+}
 
-
-def register():
-    ui.register()
-
-
-def unregister():
-    engine.stop(restore=True)
-    ui.unregister()
+# Opt-in chapters shown under "Beyond the basics" (not built yet)
+BEYOND = [
+    ("Modeling 101", "Edit mode, extrude, loop cuts."),
+    ("Modifiers", "Subdivision, Bevel, Mirror, Array."),
+    ("Materials & light", "Color, shine, and your first render."),
+    ("Animation 101", "Keyframes and the timeline."),
+]
